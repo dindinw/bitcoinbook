@@ -38,22 +38,20 @@ Colored coins::
 confirmations::
 	Once a transaction is included in a block, it has one confirmation. As soon as _another_ block is mined on the same blockchain, the transaction has two confirmations, and so on. Six or more confirmations is considered sufficient proof that a transaction cannot be reversed.((("confirmations")))
 
-consensus::
-    When several nodes, usually most nodes on the network, all have the same blocks in their locally-validated best block chain.
-    Not to be confused with consensus rules.((("consensus")))
+共识 consensus::
+    指多个节点，通常指网络上的大多数的节点，它们的本地已验证最优区块链上的区块相同。勿与“共识规则”混淆。((("consensus")))
 
-consensus rules::
-    The block validation rules that full nodes follow to stay in consensus with other nodes.
-    Not to be confused with consensus.((("consensus rules")))
+共识规则 consensus rules::
+    指所有节点都遵守的区块验证规则，该规则使得节点间能够保持共识。勿与“共识”混淆((("consensus rules")))
 
 难度 difficulty::
-	一个针对整个网络的控制参数，用来调整生成PoW（工作量证明）需要多少算力。((("难度")))
+    一个针对整个网络的控制参数，用来调整生成PoW（工作量证明）需要多少算力。((("难度")))
 
 难度调整 difficulty retargeting::
-	每当生成2016个区块后，就会根据之前产生2016个区块所使用的哈希算力来重新设置全网的难度目标。（这样做的目的是试图将区块的生成时间始终保持在十分钟左右。）((("难度调整")))
+    每当生成2016个区块后，就会根据之前产生2016个区块所使用的哈希算力来重新设置全网的难度目标。（这样做的目的是试图将区块的生成时间始终保持在十分钟左右。）((("难度调整")))
 
 目标难度  difficulty target::
-	指某个目标是使网络中的区块生成时间控制在十分钟左右的难度。((("目标难度")))
+    指某个目标是使网络中的区块生成时间控制在十分钟左右的难度。((("目标难度")))
 
 Double spending::
     Double-spending is the result of successfully spending some money more than once. Bitcoin protects against double spending by verifying each transaction added to the block chain to ensure that the inputs for the transaction had not previously already been spent. ((("Double spendingy")))
