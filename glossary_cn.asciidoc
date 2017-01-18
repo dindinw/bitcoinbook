@@ -45,16 +45,16 @@ confirmations::
     指所有节点都遵守的区块验证规则，该规则使得节点间能够保持共识。勿与“共识”混淆((("consensus rules")))
 
 难度 difficulty::
-    一个针对整个网络的控制参数，用来调整生成PoW（工作量证明）需要多少算力。((("难度")))
+    一个针对整个网络的参数，用来控制生成工作量证明（PoW）所需的算力。((("难度")))
 
 难度调整 difficulty retargeting::
-    每当生成2016个区块后，就会根据之前产生2016个区块所使用的哈希算力来重新设置全网的难度目标。（这样做的目的是试图将区块的生成时间始终保持在十分钟左右。）((("难度调整")))
+    每当生成2016个区块后，就会根据之前产生2016个区块所使用的哈希算力来重新设置全网的难度目标。（译者：这样做的目的是试图将区块的生成时间始终保持在十分钟左右。）((("难度调整")))
 
 目标难度  difficulty target::
     指某个目标是使网络中的区块生成时间控制在十分钟左右的难度。((("目标难度")))
 
-Double spending::
-    Double-spending is the result of successfully spending some money more than once. Bitcoin protects against double spending by verifying each transaction added to the block chain to ensure that the inputs for the transaction had not previously already been spent. ((("Double spendingy")))
+双花 Double spending::
+	双花指成功花掉同一笔钱两次或两次以上。比特币通过检查加入区块链的（译者：每一个区块中的）每一笔交易来防止双花，即确保每一笔交易的所有输入（译者：Tx-in，即资金来源）都没有曾经被花掉过。((("Double spendingy")))
 
 ECDSA::
     Elliptic Curve Digital Signature Algorithm or ECDSA is a cryptographic algorithm used by Bitcoin to ensure that funds can only be spent by their rightful owners.((("ECDSA")))((("Elliptic Curve Digital Signature Algorithm", see="Elliptic Curve Digital Signature Algorithm")))
