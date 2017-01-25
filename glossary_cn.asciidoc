@@ -3,40 +3,38 @@
 
 This quick glossary contains many of the terms used in relation to bitcoin. These terms are used throughout the book, so bookmark this for a quick reference.
 
-address::
-    A bitcoin address looks like +1DSrfJdB2AnWaFNgSbv3MZC2m74996JafV+. It consists of a string of letters and numbers. It's really an encoded base58check version of a public key 160-bit hash. Just like you ask others to send an email to your email address, you would ask others to send you bitcoins to one of your bitcoin addresses.((("bitcoin address")))((("address", see="bitcoin address")))((("public key", see="bitcoin address")))
+比特币地址 address::
+    比特币的地址类似于1DSrfJdB2AnWaFNgSbv3MZC2m74996JafV的格式。这其实是160位公钥哈希的base58check编码形式。这个地址很类似于电子邮件地址，当别人需要向你发送电子邮件时，需要你的电子邮件地址，而当别人需要向你发送比特币时，就需要你的比特币地址。((("bitcoin address")))((("address", see="bitcoin address")))((("public key", see="bitcoin address")))
 
-bip::
-    Bitcoin Improvement Proposals.  A set of proposals that members of the bitcoin community have submitted to improve bitcoin. For example, BIP-21 is a proposal to improve the bitcoin uniform resource identifier (URI) scheme.((("bip")))
+比特币改进提案 bip::
+    比特币改进提案 由比特币社区成员提出并以改善比特币为目的的提案。例如提案21（BIP-21 ）的目的是改进比特币的统一资源定位符（URI）格式。((("bip")))
 
-bitcoin::
-    The name of the currency unit (the coin), the network, and the software.((("bitcoin")))
+比特币 bitcoin::
+    一种流通货币单元的名称，以及该货币的网络和软件。((("bitcoin")))
 
-block::
-    A grouping of transactions, marked with a timestamp, and a fingerprint of the previous block. The block header is hashed to produce a proof of work, thereby validating the transactions. Valid blocks are added to the main blockchain by network consensus.((("block")))
+区块 block::
+    带有时间戳的一组交易以及前一个区块的指纹。对区块头进行哈希运算，以产出工作量证明来验证这些交易。已验证的区块通过网络共识加入到主链。((("block")))
 
-blockchain::
-	A list of validated blocks, each linking to its predecessor all the way to the genesis block.((("blockchain")))
+区块链 blockchain::
+    已验证区块的列表，每一个区块都与前一个区块向连接，直到创世区块(the genesis block)。((("blockchain")))
 
-Byzantine Generals Problem::
-    A reliable computer system must be able to cope with the failure of one or more of its components. A failed component may exhibit a type of behavior that is often overlooked--namely, sending conflicting information to different parts of the system. The problem of coping with this type of failure is expressed abstractly as the Byzantine Generals Problem.((("Byzantine Generals Problem")))
+拜占庭将军问题 Byzantine Generals Problem::
+    一个可靠的计算机系统必须能够应对其一个或多个组件失败的情况。失败的组件的有一种行为时常被忽略，即试图向系统的其他部分发送相互冲突的信息。而应对这种类型的失败的问题，被抽象为拜占庭将军问题。((("Byzantine Generals Problem")))
 
-coinbase::
-	A special field used as the sole input for coinbase transactions. The coinbase allows claiming the block reward and provides up to 100 bytes for arbitrary data.
-	Not to be confused with Coinbase transaction.((("coinbase")))
+币基 coinbase::
+	它是币基交易的唯一输入，一个特殊的字段，用来说明区块奖励，并提供了100个字节的存储空间，可以写任意的数据。请勿与'币基交易'相混淆。((("coinbase")))
 
-coinbase transaction::
-	The first transaction in a block. Always created by a miner, it includes a single coinbase.
-	Not to be confused with Coinbase.((("coinbase transaction")))
+币基交易 coinbase transaction::
+    区块中的第一个交易，总是由矿工来创建，币基交易只包括唯一一个币基。请勿与'币基'相混淆。((("coinbase transaction")))
 
-cold storage::
-	Refers to keeping a reserve of bitcoins offline. Cold storage is achieved when Bitcoin private keys are created and stored in a secure offline environment. Cold storage is important for anyone with bitcoin holdings. Online computers are vulnerable to hackers and should not be used to store a significant amount of bitcoins.((("cold storage")))
+冷存储 cold storage::
+    指离线地存储比特币的方式。冷存储只在安全的离线环境中生成和存储比特币，冷存储对比特币的持有者很重要。在线的电脑一般容易受到黑客的攻击，一般不适合于存储大量的比特币。((("cold storage")))
 
-Colored coins::
-	It's an open source Bitcoin 2.0 protocol that enables developers to create digital assets on top of Bitcoin Blockchain utilizing its functionalities beyond currency. ((("colored coins")))
+彩色币 Colored coins::
+    一种基于开源比特币2.0的协议，开发者可以基于比特币区块链的功能来生成不只限于货币的电子资产。((("colored coins")))
 	
-confirmations::
-	Once a transaction is included in a block, it has one confirmation. As soon as _another_ block is mined on the same blockchain, the transaction has two confirmations, and so on. Six or more confirmations is considered sufficient proof that a transaction cannot be reversed.((("confirmations")))
+确认 confirmations::
+    当一个交易被加入区块，就获得一个确认，当矿工挖掘到另一个区块，并写入区块链，该交易就获得第二个确认，依次类推，当获得了六个，或多于六个确认时，就被认为，该交易已经足够安全，无法逆转。((("confirmations")))
 
 共识 consensus::
     指多个节点（通常指网络上的大多数的节点）的本地已验证最优区块链上所包含的区块相同。勿与“共识规则”混淆。((("consensus")))
